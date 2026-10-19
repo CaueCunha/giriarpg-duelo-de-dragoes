@@ -2,7 +2,7 @@
   "id": "duelo-de-dragoes",
   "title": "Giriarpg - Duelo de Dragões",
   "description": "Importa cada revista de Duelo de Dragões (Revista Tormenta20 #1–20) para o mundo: ameaças, parceiros, tabelas, macros, diários e handouts, com as automações da campanha.",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "authors": [
     {
       "name": "Cauê"
@@ -28,5 +28,73 @@
   ],
   "url": "https://github.com/CaueCunha/giriarpg-duelo-de-dragoes",
   "manifest": "https://raw.githubusercontent.com/CaueCunha/giriarpg-duelo-de-dragoes/main/module.json",
-  "download": "https://raw.githubusercontent.com/CaueCunha/giriarpg-duelo-de-dragoes/main/duelo-de-dragoes.zip"
+  "download": "https://raw.githubusercontent.com/CaueCunha/giriarpg-duelo-de-dragoes/main/duelo-de-dragoes.zip",
+  "packs": [
+    {
+      "name": "ameacas",
+      "label": "DdD · Ameaças e aliados",
+      "path": "packs/ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "itens",
+      "label": "DdD · Itens e parceiros",
+      "path": "packs/itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "DdD · Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tabelas",
+      "label": "DdD · Tabelas",
+      "path": "packs/tabelas",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "diarios",
+      "label": "DdD · Diários do mestre",
+      "path": "packs/diarios",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Giriarpg - Duelo de Dragões",
+      "sorting": "m",
+      "color": "#7a1f1f",
+      "packs": [
+        "ameacas",
+        "itens",
+        "macros",
+        "tabelas",
+        "diarios"
+      ]
+    }
+  ]
 }

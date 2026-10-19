@@ -20,6 +20,10 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 
 Tudo vai para pastas "Duelo de Dragões / Revista N" em Atores, Itens, Tabelas, Macros e Diários. As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
 
+## Compêndios (desde 0.5.0)
+
+Com o módulo ativo, a aba Compêndios mostra a pasta **Giriarpg - Duelo de Dragões** com cinco compêndios: Ameaças e aliados, Itens e parceiros, Macros, Tabelas e Diários do mestre. Cada um tem uma pasta por revista. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
+
 ## Reimportar e remover
 
 - **Instalar uma versão nova do módulo não muda nada no mundo.** Só o botão Importar/Reimportar de uma revista cria ou troca documentos, e só os daquela revista. Importar a revista 3 nunca toca na 2.
