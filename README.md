@@ -47,6 +47,8 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 | `soproCompartilhado: "<grupo>"` | Só um membro do grupo usa o sopro por vez; recarrega quando um membro cai a 0 PV; avisa o mestre por sussurro | Cultistas de Kallyadranoch (#2) |
 | `ataqueEmBando: true` | Ao atacar com arma, compara o ataque com a Defesa de cada alvo marcado e avisa o mestre: ×2 (excedeu por 10+), ×1 ou ×½ (errou) | Turba zumbi (#4) |
 | `verVermelho: true` | O efeito "Ver Vermelho" (+2 em perícias) desliga quando a ficha é alvo de ataque ou habilidade e religa no fim do turno dela | Minotauro da Manada (#4) |
+| `lutarEmFormacao: true` | O efeito "Lutar em Formação" (+2 ataque e Defesa) liga quando o token está adjacente a outro token vivo com a mesma automação e a mesma disposição, e desliga quando se afasta | Puristas (#5) |
+| `evacuacao: 20` | Avisa o mestre quando a ficha começa o turno com PV entre 1 e o número dado | Corcel de Comando (#5) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
@@ -78,3 +80,4 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 3. Pôr 2 cultistas, usar o Sopro de Dragão de um, tentar o do outro (deve avisar) e derrubar um (deve recarregar).
 4. Revista 3: rodar **R3 · Servos do dragão** com Cerise selecionada (gasta 2 PM e põe os kobolds), **R3 · Bugulentos** num herói e **R3 · Nevasca** ligando e desligando; arrastar o item **Montaria: Trobo** para um herói e ver se o deslocamento vira 9 m.
 5. Revista 4: **R4 · Queda de braço** com um herói e Borr selecionados; **R4 · Escalada do cume** até cair uma vez; **R4 · Pertences de Zaldrin** (precisa do compêndio de tabelas do sistema); atacar um Minotauro da Manada marcado como alvo e ver o efeito Ver Vermelho desligar; atacar com a Turba Zumbi com um herói marcado e conferir o aviso de ×2/×1/×½; ferrão da serpe aplicando a peçonha.
+6. Revista 5: **R5 · Desabamento** com os heróis selecionados; **R5 · Perseguição** algumas rodadas até captura ou fuga; mover tokens de puristas lado a lado e ver Lutar em Formação ligar e desligar; deixar o Corcel de Comando com 20 PV ou menos e passar o turno; ligar Montada em Víbora na ficha de Dame Lia.
