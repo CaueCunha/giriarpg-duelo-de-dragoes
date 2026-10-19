@@ -41,6 +41,8 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 |---|---|---|
 | `ferocidade: true` | Ao perder PV, ganha +2 em ataque e dano até o fim do próximo turno | Carcaju (#2, #3) |
 | `soproCompartilhado: "<grupo>"` | Só um membro do grupo usa o sopro por vez; recarrega quando um membro cai a 0 PV; avisa o mestre por sussurro | Cultistas de Kallyadranoch (#2) |
+| `ataqueEmBando: true` | Ao atacar com arma, compara o ataque com a Defesa de cada alvo marcado e avisa o mestre: ×2 (excedeu por 10+), ×1 ou ×½ (errou) | Turba zumbi (#4) |
+| `verVermelho: true` | O efeito "Ver Vermelho" (+2 em perícias) desliga quando a ficha é alvo de ataque ou habilidade e religa no fim do turno dela | Minotauro da Manada (#4) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
@@ -71,3 +73,4 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 2. Pôr um carcaju numa cena, causar dano e ver se a Ferocidade aparece e some no fim do próximo turno.
 3. Pôr 2 cultistas, usar o Sopro de Dragão de um, tentar o do outro (deve avisar) e derrubar um (deve recarregar).
 4. Revista 3: rodar **R3 · Servos do dragão** com Cerise selecionada (gasta 2 PM e põe os kobolds), **R3 · Bugulentos** num herói e **R3 · Nevasca** ligando e desligando; arrastar o item **Montaria: Trobo** para um herói e ver se o deslocamento vira 9 m.
+5. Revista 4: **R4 · Queda de braço** com um herói e Borr selecionados; **R4 · Escalada do cume** até cair uma vez; **R4 · Pertences de Zaldrin** (precisa do compêndio de tabelas do sistema); atacar um Minotauro da Manada marcado como alvo e ver o efeito Ver Vermelho desligar; atacar com a Turba Zumbi com um herói marcado e conferir o aviso de ×2/×1/×½; ferrão da serpe aplicando a peçonha.
