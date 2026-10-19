@@ -1,0 +1,32 @@
+{
+  "id": "duelo-de-dragoes",
+  "title": "Duelo de Dragões (mesa do Cauê)",
+  "description": "Importa cada revista de Duelo de Dragões (Revista Tormenta20 #1–20) para o mundo: ameaças, parceiros, tabelas, macros, diários, handouts, com as automações da campanha.",
+  "version": "0.4.0",
+  "authors": [
+    {
+      "name": "Cauê"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "tormenta20",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.6.0"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "url": "https://github.com/CaueCunha/giriarpg-duelo-de-dragoes",
+  "manifest": "https://raw.githubusercontent.com/CaueCunha/giriarpg-duelo-de-dragoes/main/module.json",
+  "download": "https://raw.githubusercontent.com/CaueCunha/giriarpg-duelo-de-dragoes/main/duelo-de-dragoes.zip"
+}
