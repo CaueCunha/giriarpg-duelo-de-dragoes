@@ -49,6 +49,8 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 | `verVermelho: true` | O efeito "Ver Vermelho" (+2 em perícias) desliga quando a ficha é alvo de ataque ou habilidade e religa no fim do turno dela | Minotauro da Manada (#4) |
 | `lutarEmFormacao: true` | O efeito "Lutar em Formação" (+2 ataque e Defesa) liga quando o token está adjacente a outro token vivo com a mesma automação e a mesma disposição, e desliga quando se afasta | Puristas (#5) |
 | `evacuacao: 20` | Avisa o mestre quando a ficha começa o turno com PV entre 1 e o número dado | Corcel de Comando (#5) |
+| `auraVenenosa: {dano, cd}` | No início do turno de cada inimigo adjacente, rola a Fortitude dele, tira o dano em PV (metade se passar) e aplica fraco | Kallyagrai do veneno (#7) |
+| `fimToxico: {dano, cd, raio}` | Ao cair a 0 PV, explode: Fortitude de todos no raio sem imunidade a veneno, dano e fraco | Kallyagrai do veneno (#7) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
@@ -82,3 +84,4 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 5. Revista 4: **R4 · Queda de braço** com um herói e Borr selecionados; **R4 · Escalada do cume** até cair uma vez; **R4 · Pertences de Zaldrin** (precisa do compêndio de tabelas do sistema); atacar um Minotauro da Manada marcado como alvo e ver o efeito Ver Vermelho desligar; atacar com a Turba Zumbi com um herói marcado e conferir o aviso de ×2/×1/×½; ferrão da serpe aplicando a peçonha.
 6. Revista 5: **R5 · Desabamento** com os heróis selecionados; **R5 · Perseguição** algumas rodadas até captura ou fuga; mover tokens de puristas lado a lado e ver Lutar em Formação ligar e desligar; deixar o Corcel de Comando com 20 PV ou menos e passar o turno; ligar Montada em Víbora na ficha de Dame Lia.
 7. Revista 6: **R6 · Céus Hostis** até 7 sucessos; **R6 · Deslizamento** (1º clique = Iniciativa, depois 5 rodadas) e conferir o efeito Soterrado; **R6 · Longa escalada** até todos chegarem; **R6 · Conexão com Dame Lia** subindo até 3; o Poder Usurpado de Marlinor com os quatro elementos; as formas da Espada Enigma.
+8. Revista 7: iniciar combate com um kallyagrai adjacente a um herói e ver a Aura Venenosa no turno do herói; reduzir um kallyagrai a 0 PV e conferir o Fim Tóxico; **R7 · Poça de veneno** com a opção de queda; **R7 · Descanso no covil** duas vezes; ligar Sangue de dragão no Pentalépide.
