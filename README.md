@@ -56,6 +56,7 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 | `auraArdente: {dano, tipo, pericia, cd}` | No início do turno de cada criatura adjacente: teste da perícia e dano do tipo (metade se passar) | kallyagrai do fogo (#10) |
 | `curaAcelerada: N` | No início do próprio turno, cura N PV se estiver vivo e ferido | barão e duplo cultista (#10) |
 | `naturalUm: {efeito, texto}` | Com o efeito indicado ligado, avisa o mestre quando a ficha rola 1 natural num d20 | Stridnix perde a forma dracônica (#11) |
+| `aoSerAtingido: {nome, pericia, cd, condicao, soComPVTemp, corpoACorpo}` | Quem acerta a ficha (alvo marcado) testa a perícia; se falhar, recebe a condição | Escudo de Gelo do golem de Nor: Fortitude CD 14 ou enredado, só com os PV temporários e em corpo a corpo (#2) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
