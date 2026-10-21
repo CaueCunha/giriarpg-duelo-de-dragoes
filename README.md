@@ -80,6 +80,10 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 - `data/geral.json`: o pacote Ferramentas gerais.
 - `assets/revista-NN/`: tokens e handouts.
 
+## Testes automáticos (desde 0.15.0)
+
+Antes de cada publicação, uma bateria de testes confere todas as fichas, itens, efeitos, macros, automações, a importação e os compêndios com as regras do sistema Tormenta20, num Foundry simulado. Se algum teste falha, a versão não é publicada. Os testes não substituem abrir o mundo: a aparência das janelas e a convivência com outros módulos só se veem no Foundry.
+
 ## O que testar primeiro
 
 1. Importar a revista 2 num mundo de teste e abrir cada ficha (atributos, perícias, Defesa, ataques).
