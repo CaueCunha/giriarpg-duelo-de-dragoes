@@ -81,6 +81,10 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 - `data/geral.json`: o pacote Ferramentas gerais.
 - `assets/revista-NN/`: tokens e handouts.
 
+## Perigos complexos (desde 0.16.0)
+
+Cada perigo complexo com ficha no livro vem como ficha **Perigo Complexo** do sistema (Objetivo, Efeito e Ações, com o texto do livro), na pasta de ameaças da revista: Obter Recursos e Avalanche Menor (#2), Céus Hostis e Deslizamento (#6), Tempestade Fluvial (#8), Jornada para Tyros (#10) e Jornada para Thenarallan (#11). Elas começam escondidas. Para mostrar aos jogadores, clique com o botão direito na ficha, escolha **Configurar permissões** e dê **Observador** a todos (ou arraste o token para a cena). As rolagens continuam nas macros de cada perigo, que ignoram o token do perigo se ele estiver selecionado.
+
 ## Testes automáticos (desde 0.15.0)
 
 Antes de cada publicação, uma bateria de testes confere todas as fichas, itens, efeitos, macros, automações, a importação e os compêndios com as regras do sistema Tormenta20, num Foundry simulado. Se algum teste falha, a versão não é publicada. Os testes não substituem abrir o mundo: a aparência das janelas e a convivência com outros módulos só se veem no Foundry.
