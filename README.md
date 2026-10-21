@@ -55,6 +55,7 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 | `avisoPV: {limite, texto}` | Avisa o mestre quando os PV caem para o limite ou menos | Aranzirius a 80 PV, Tabalinn interrompe (#8) |
 | `auraArdente: {dano, tipo, pericia, cd}` | No início do turno de cada criatura adjacente: teste da perícia e dano do tipo (metade se passar) | kallyagrai do fogo (#10) |
 | `curaAcelerada: N` | No início do próprio turno, cura N PV se estiver vivo e ferido | barão e duplo cultista (#10) |
+| `naturalUm: {efeito, texto}` | Com o efeito indicado ligado, avisa o mestre quando a ficha rola 1 natural num d20 | Stridnix perde a forma dracônica (#11) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
@@ -92,3 +93,4 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 9. Revista 8: pôr Ária numa cena e reduzir a 0 PV (o token deve virar Aranzirius); baixar Aranzirius para 80 PV (aviso de Tabalinn); **R8 · Deriva da carruagem** com tokens e tile selecionados; **R8 · Tempestade Fluvial** algumas rodadas; **R8 · Testes estendidos do Tritão** e **R8 · Dragoa Sorrateira**.
 10. Revista 9: **R9 · Reforços de Moggo** com Moggo selecionado (tokens aparecem em volta); **R9 · Olho do Tigre** com o token de Zakkrad ferido na cena e "Zakkrad vence o terço" (PV cheios de novo); **R9 · Vantagens táticas** com tokens na cena.
 11. Revista 10: kallyagrai e um herói adjacentes num combate (Aura Ardente no início do turno do herói); barão ferido (cura 10 no turno dele, aviso a 0 PV); **R10 · Jornada para Tyros**, **R10 · Dado de investigação**, **R10 · Urro na escadaria** e **R10 · Despedida de Lia**.
+12. Revista 11: ligar "Forma dracônica" em Stridnix e rolar até sair 1 natural (aviso); atacar um herói marcado com a Revoada de Serpes (aviso de bando) e baixá-la para 500 PV (o ginete foge); **R11 · Jornada para Thenarallan** com os botões Ruínas e Serpes vencidas; **R11 · Stridnix**, **R11 · Suspeita dos rebeldes**, **R11 · Sou rebelde!**, **R11 · Entre os rebeldes** e **R11 · Desfecho em Thenarallan**.
