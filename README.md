@@ -53,6 +53,8 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 | `fimToxico: {dano, cd, raio}` | Ao cair a 0 PV, explode: Fortitude de todos no raio sem imunidade a veneno, dano e fraco | Kallyagrai do veneno (#7) |
 | `formaDraconica: "<ficha>"` | Ao cair a 0 PV, troca o token pelo da ficha indicada (PV e PM cheios), no mesmo lugar; não troca se a ficha tiver o efeito "Sem forma dracônica" ligado | Ária → Aranzirius (#8) |
 | `avisoPV: {limite, texto}` | Avisa o mestre quando os PV caem para o limite ou menos | Aranzirius a 80 PV, Tabalinn interrompe (#8) |
+| `auraArdente: {dano, tipo, pericia, cd}` | No início do turno de cada criatura adjacente: teste da perícia e dano do tipo (metade se passar) | kallyagrai do fogo (#10) |
+| `curaAcelerada: N` | No início do próprio turno, cura N PV se estiver vivo e ferido | barão e duplo cultista (#10) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
@@ -89,3 +91,4 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 8. Revista 7: iniciar combate com um kallyagrai adjacente a um herói e ver a Aura Venenosa no turno do herói; reduzir um kallyagrai a 0 PV e conferir o Fim Tóxico; **R7 · Poça de veneno** com a opção de queda; **R7 · Descanso no covil** duas vezes; ligar Sangue de dragão no Pentalépide.
 9. Revista 8: pôr Ária numa cena e reduzir a 0 PV (o token deve virar Aranzirius); baixar Aranzirius para 80 PV (aviso de Tabalinn); **R8 · Deriva da carruagem** com tokens e tile selecionados; **R8 · Tempestade Fluvial** algumas rodadas; **R8 · Testes estendidos do Tritão** e **R8 · Dragoa Sorrateira**.
 10. Revista 9: **R9 · Reforços de Moggo** com Moggo selecionado (tokens aparecem em volta); **R9 · Olho do Tigre** com o token de Zakkrad ferido na cena e "Zakkrad vence o terço" (PV cheios de novo); **R9 · Vantagens táticas** com tokens na cena.
+11. Revista 10: kallyagrai e um herói adjacentes num combate (Aura Ardente no início do turno do herói); barão ferido (cura 10 no turno dele, aviso a 0 PV); **R10 · Jornada para Tyros**, **R10 · Dado de investigação**, **R10 · Urro na escadaria** e **R10 · Despedida de Lia**.
