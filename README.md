@@ -51,6 +51,8 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 | `evacuacao: 20` | Avisa o mestre quando a ficha começa o turno com PV entre 1 e o número dado | Corcel de Comando (#5) |
 | `auraVenenosa: {dano, cd}` | No início do turno de cada inimigo adjacente, rola a Fortitude dele, tira o dano em PV (metade se passar) e aplica fraco | Kallyagrai do veneno (#7) |
 | `fimToxico: {dano, cd, raio}` | Ao cair a 0 PV, explode: Fortitude de todos no raio sem imunidade a veneno, dano e fraco | Kallyagrai do veneno (#7) |
+| `formaDraconica: "<ficha>"` | Ao cair a 0 PV, troca o token pelo da ficha indicada (PV e PM cheios), no mesmo lugar; não troca se a ficha tiver o efeito "Sem forma dracônica" ligado | Ária → Aranzirius (#8) |
+| `avisoPV: {limite, texto}` | Avisa o mestre quando os PV caem para o limite ou menos | Aranzirius a 80 PV, Tabalinn interrompe (#8) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
@@ -85,3 +87,4 @@ Fonte de cada revista: `duelo-de-dragoes/revista-NN/`
 6. Revista 5: **R5 · Desabamento** com os heróis selecionados; **R5 · Perseguição** algumas rodadas até captura ou fuga; mover tokens de puristas lado a lado e ver Lutar em Formação ligar e desligar; deixar o Corcel de Comando com 20 PV ou menos e passar o turno; ligar Montada em Víbora na ficha de Dame Lia.
 7. Revista 6: **R6 · Céus Hostis** até 7 sucessos; **R6 · Deslizamento** (1º clique = Iniciativa, depois 5 rodadas) e conferir o efeito Soterrado; **R6 · Longa escalada** até todos chegarem; **R6 · Conexão com Dame Lia** subindo até 3; o Poder Usurpado de Marlinor com os quatro elementos; as formas da Espada Enigma.
 8. Revista 7: iniciar combate com um kallyagrai adjacente a um herói e ver a Aura Venenosa no turno do herói; reduzir um kallyagrai a 0 PV e conferir o Fim Tóxico; **R7 · Poça de veneno** com a opção de queda; **R7 · Descanso no covil** duas vezes; ligar Sangue de dragão no Pentalépide.
+9. Revista 8: pôr Ária numa cena e reduzir a 0 PV (o token deve virar Aranzirius); baixar Aranzirius para 80 PV (aviso de Tabalinn); **R8 · Deriva da carruagem** com tokens e tile selecionados; **R8 · Tempestade Fluvial** algumas rodadas; **R8 · Testes estendidos do Tritão** e **R8 · Dragoa Sorrateira**.
