@@ -57,6 +57,7 @@ Cada ficha liga a sua por flag (`flags.duelo-de-dragoes.automacoes`):
 | `curaAcelerada: N` | No início do próprio turno, cura N PV se estiver vivo e ferido | barão e duplo cultista (#10) |
 | `naturalUm: {efeito, texto}` | Com o efeito indicado ligado, avisa o mestre quando a ficha rola 1 natural num d20 | Stridnix perde a forma dracônica (#11) |
 | `aoSerAtingido: {nome, pericia, cd, condicao, soComPVTemp, corpoACorpo}` | Quem acerta a ficha (alvo marcado) testa a perícia; se falhar, recebe a condição | Escudo de Gelo do golem de Nor: Fortitude CD 14 ou enredado, só com os PV temporários e em corpo a corpo (#2) |
+| `adesivoAcido: {cd, dano}` | Quem rola 1 natural atacando a ficha com arma (alvo marcado) fica agarrado e o mestre é avisado da arma grudada | Kallyagrai do ácido: a arma perde 1d6 PV por rodada, soltar pede Luta CD 24 (#12) |
 
 Novas revistas acrescentam chaves em `scripts/automacoes.mjs`.
 
@@ -103,3 +104,4 @@ Antes de cada publicação, uma bateria de testes confere todas as fichas, itens
 10. Revista 9: **R9 · Reforços de Moggo** com Moggo selecionado (tokens aparecem em volta); **R9 · Olho do Tigre** com o token de Zakkrad ferido na cena e "Zakkrad vence o terço" (PV cheios de novo); **R9 · Vantagens táticas** com tokens na cena.
 11. Revista 10: kallyagrai e um herói adjacentes num combate (Aura Ardente no início do turno do herói); barão ferido (cura 10 no turno dele, aviso a 0 PV); **R10 · Jornada para Tyros**, **R10 · Dado de investigação**, **R10 · Urro na escadaria** e **R10 · Despedida de Lia**.
 12. Revista 11: ligar "Forma dracônica" em Stridnix e rolar até sair 1 natural (aviso); atacar um herói marcado com a Revoada de Serpes (aviso de bando) e baixá-la para 500 PV (o ginete foge); **R11 · Jornada para Thenarallan** com os botões Ruínas e Serpes vencidas; **R11 · Stridnix**, **R11 · Suspeita dos rebeldes**, **R11 · Sou rebelde!**, **R11 · Entre os rebeldes** e **R11 · Desfecho em Thenarallan**.
+13. Revista 12: atacar um Kallyagrai do Ácido Superior marcado como alvo até sair 1 natural (o atacante fica agarrado); pôr o Casulo da Desesperança na cena e clicar 5 vezes em "Clérigo reza" em **R12 · Casulo da desesperança** (o token vira Açucena de Kallyadranoch); **R12 · Fogo-fátuo**, **R12 · Travessia do pântano**, **R12 · Apagar o incêndio** com o contador em 1 e **R12 · Maldição de Edauros** com um cavaleiro selecionado.
