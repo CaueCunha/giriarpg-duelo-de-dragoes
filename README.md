@@ -18,7 +18,11 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 2. Reinicie o Foundry, abra o mundo e ative o módulo em **Gerenciar Módulos**.
 3. Abra **Configurações > Configurar Opções > Duelo de Dragões > Importar revistas** (ou rode `ddd.abrir()` no console) e clique em **Importar** em **Ferramentas gerais** (uma vez por mundo) e depois na revista.
 
-Tudo vai para pastas "Duelo de Dragões / Revista N" em Atores, Itens, Tabelas, Macros e Diários. As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
+Tudo vai para as mesmas pastas dos compêndios, em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista N" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 2 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
+
+## Pastas por patamar (desde 0.18.0)
+
+Mundos que importaram revistas antes da 0.18.0 têm "Duelo de Dragões / Revista N" direto na raiz. Ao abrir o mundo, o mestre ativo move cada pasta de revista para dentro da pasta do patamar, com tudo o que estiver dentro (inclusive subpastas e documentos que você colocou lá). Nada é reimportado nem apagado, e isso acontece mesmo com a sincronização automática desligada.
 
 ## Sincronização automática (desde 0.7.0)
 
@@ -26,7 +30,17 @@ Ao abrir o mundo, o mestre ativo cria as revistas novas e reimporta as que mudar
 
 ## Compêndios (desde 0.5.0)
 
-Com o módulo ativo, a aba Compêndios mostra a pasta **Giriarpg - Duelo de Dragões** com cinco compêndios: Ameaças e aliados, Itens e parceiros, Macros, Tabelas e Diários do mestre. Cada um tem uma pasta por revista. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
+Com o módulo ativo, a aba Compêndios mostra a pasta **Duelo de Dragões** com cinco compêndios, um por tipo (o mesmo padrão de Fim dos Tempos e Giria T20): **Ameaças e NPCs**, **Itens e parceiros**, **Diários**, **Tabelas** e **Macros**. Dentro de cada um:
+
+| Pasta | Revistas | Cor |
+|---|---|---|
+| Ferramentas gerais | macros da campanha toda | ocre |
+| Patamar 1 · Iniciante | 1 a 4 (Selentine e Uivantes) | azul |
+| Patamar 2 · Veterano | 5 a 10 (a viagem até Sckharshantallas) | verde |
+| Patamar 3 · Campeão | 11 a 16 (Sckharshantallas) | vermelho |
+| Patamar 4 · Lenda | 17 a 20 (os sopros dos Dragões-Reais) | roxo |
+
+Cada patamar tem uma pasta por revista, em ordem numérica e com a cor do patamar. A pasta de um patamar só aparece quando ele tem alguma revista pronta. Os nomes internos dos compêndios e os ids não mudaram (desde 0.18.0), então links e UUIDs antigos continuam valendo. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
 
 ## Reimportar e remover
 
