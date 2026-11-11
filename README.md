@@ -20,6 +20,10 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 
 Tudo vai para as mesmas pastas dos compêndios, em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista NN" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 02 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
 
+## Substituição pela versão corrigida (0.19.1)
+
+Na primeira vez que o mundo abre com a 0.19.1, o mestre ativo troca **tudo** o que veio das revistas pela versão atual do módulo, inclusive o que você tinha editado, para todas as correções valerem de uma vez. Antes, cada documento editado ganha uma cópia em **Duelo de Dragões / Cópias das suas edições (0.19.1)**, com "(sua edição)" no nome. As cópias não têm a marca da revista, então nenhuma importação mexe nelas, e você pode apagá-las quando quiser. Revistas removidas não voltam, os ids são os mesmos (tokens continuam ligados) e um sussurro no chat resume o que foi trocado. Isso acontece uma vez só por mundo; depois, as próximas versões voltam a manter suas edições.
+
 ## Pastas por patamar (desde 0.18.0)
 
 Mundos que importaram revistas antes da 0.18.0 têm "Duelo de Dragões / Revista 2" direto na raiz. Ao abrir o mundo, o mestre ativo move cada pasta de revista para dentro da pasta do patamar e acerta o nome (Revista 02), com tudo o que estiver dentro (inclusive subpastas e documentos que você colocou lá). Nada é reimportado nem apagado, e isso acontece mesmo com a sincronização automática desligada.
