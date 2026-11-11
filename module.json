@@ -2,7 +2,7 @@
   "id": "duelo-de-dragoes",
   "title": "Giriarpg - Duelo de Dragões",
   "description": "Importa cada revista de Duelo de Dragões (Revista Tormenta20 #1–20) para o mundo: ameaças, parceiros, tabelas, macros, diários e handouts, com as automações da campanha.",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "authors": [
     {
       "name": "Cauê"
@@ -31,9 +31,19 @@
   "download": "https://raw.githubusercontent.com/CaueCunha/giriarpg-duelo-de-dragoes/main/duelo-de-dragoes.zip",
   "packs": [
     {
-      "name": "ameacas",
-      "label": "Ameaças e NPCs",
-      "path": "packs/ameacas",
+      "name": "geral-macros",
+      "label": "Macros",
+      "path": "packs/geral-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r02-ameacas",
+      "label": "R02 · Ameaças e NPCs",
+      "path": "packs/r02-ameacas",
       "type": "Actor",
       "system": "tormenta20",
       "ownership": {
@@ -42,9 +52,9 @@
       }
     },
     {
-      "name": "itens",
-      "label": "Itens e parceiros",
-      "path": "packs/itens",
+      "name": "r02-itens",
+      "label": "R02 · Itens e parceiros",
+      "path": "packs/r02-itens",
       "type": "Item",
       "system": "tormenta20",
       "ownership": {
@@ -53,29 +63,527 @@
       }
     },
     {
-      "name": "diarios",
-      "label": "Diários",
-      "path": "packs/diarios",
+      "name": "r02-diarios",
+      "label": "R02 · Diários",
+      "path": "packs/r02-diarios",
       "type": "JournalEntry",
+      "system": "tormenta20",
       "ownership": {
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
     },
     {
-      "name": "tabelas",
-      "label": "Tabelas",
-      "path": "packs/tabelas",
+      "name": "r02-tabelas",
+      "label": "R02 · Tabelas",
+      "path": "packs/r02-tabelas",
       "type": "RollTable",
+      "system": "tormenta20",
       "ownership": {
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
     },
     {
-      "name": "macros",
-      "label": "Macros",
-      "path": "packs/macros",
+      "name": "r02-macros",
+      "label": "R02 · Macros",
+      "path": "packs/r02-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r03-ameacas",
+      "label": "R03 · Ameaças e NPCs",
+      "path": "packs/r03-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r03-itens",
+      "label": "R03 · Itens e parceiros",
+      "path": "packs/r03-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r03-diarios",
+      "label": "R03 · Diários",
+      "path": "packs/r03-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r03-macros",
+      "label": "R03 · Macros",
+      "path": "packs/r03-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r04-ameacas",
+      "label": "R04 · Ameaças e NPCs",
+      "path": "packs/r04-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r04-itens",
+      "label": "R04 · Itens e parceiros",
+      "path": "packs/r04-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r04-diarios",
+      "label": "R04 · Diários",
+      "path": "packs/r04-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r04-macros",
+      "label": "R04 · Macros",
+      "path": "packs/r04-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r05-ameacas",
+      "label": "R05 · Ameaças e NPCs",
+      "path": "packs/r05-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r05-itens",
+      "label": "R05 · Itens e parceiros",
+      "path": "packs/r05-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r05-diarios",
+      "label": "R05 · Diários",
+      "path": "packs/r05-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r05-tabelas",
+      "label": "R05 · Tabelas",
+      "path": "packs/r05-tabelas",
+      "type": "RollTable",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r05-macros",
+      "label": "R05 · Macros",
+      "path": "packs/r05-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r06-ameacas",
+      "label": "R06 · Ameaças e NPCs",
+      "path": "packs/r06-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r06-itens",
+      "label": "R06 · Itens e parceiros",
+      "path": "packs/r06-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r06-diarios",
+      "label": "R06 · Diários",
+      "path": "packs/r06-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r06-tabelas",
+      "label": "R06 · Tabelas",
+      "path": "packs/r06-tabelas",
+      "type": "RollTable",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r06-macros",
+      "label": "R06 · Macros",
+      "path": "packs/r06-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r07-ameacas",
+      "label": "R07 · Ameaças e NPCs",
+      "path": "packs/r07-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r07-itens",
+      "label": "R07 · Itens e parceiros",
+      "path": "packs/r07-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r07-diarios",
+      "label": "R07 · Diários",
+      "path": "packs/r07-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r07-tabelas",
+      "label": "R07 · Tabelas",
+      "path": "packs/r07-tabelas",
+      "type": "RollTable",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r07-macros",
+      "label": "R07 · Macros",
+      "path": "packs/r07-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r08-ameacas",
+      "label": "R08 · Ameaças e NPCs",
+      "path": "packs/r08-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r08-itens",
+      "label": "R08 · Itens e parceiros",
+      "path": "packs/r08-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r08-diarios",
+      "label": "R08 · Diários",
+      "path": "packs/r08-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r08-tabelas",
+      "label": "R08 · Tabelas",
+      "path": "packs/r08-tabelas",
+      "type": "RollTable",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r08-macros",
+      "label": "R08 · Macros",
+      "path": "packs/r08-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r09-ameacas",
+      "label": "R09 · Ameaças e NPCs",
+      "path": "packs/r09-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r09-itens",
+      "label": "R09 · Itens e parceiros",
+      "path": "packs/r09-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r09-diarios",
+      "label": "R09 · Diários",
+      "path": "packs/r09-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r09-tabelas",
+      "label": "R09 · Tabelas",
+      "path": "packs/r09-tabelas",
+      "type": "RollTable",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r09-macros",
+      "label": "R09 · Macros",
+      "path": "packs/r09-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r10-ameacas",
+      "label": "R10 · Ameaças e NPCs",
+      "path": "packs/r10-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r10-itens",
+      "label": "R10 · Itens e parceiros",
+      "path": "packs/r10-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r10-diarios",
+      "label": "R10 · Diários",
+      "path": "packs/r10-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r10-macros",
+      "label": "R10 · Macros",
+      "path": "packs/r10-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r11-ameacas",
+      "label": "R11 · Ameaças e NPCs",
+      "path": "packs/r11-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r11-itens",
+      "label": "R11 · Itens e parceiros",
+      "path": "packs/r11-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r11-diarios",
+      "label": "R11 · Diários",
+      "path": "packs/r11-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r11-macros",
+      "label": "R11 · Macros",
+      "path": "packs/r11-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r12-ameacas",
+      "label": "R12 · Ameaças e NPCs",
+      "path": "packs/r12-ameacas",
+      "type": "Actor",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r12-itens",
+      "label": "R12 · Itens e parceiros",
+      "path": "packs/r12-itens",
+      "type": "Item",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r12-diarios",
+      "label": "R12 · Diários",
+      "path": "packs/r12-diarios",
+      "type": "JournalEntry",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r12-tabelas",
+      "label": "R12 · Tabelas",
+      "path": "packs/r12-tabelas",
+      "type": "RollTable",
+      "system": "tormenta20",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "r12-macros",
+      "label": "R12 · Macros",
+      "path": "packs/r12-macros",
       "type": "Macro",
       "ownership": {
         "PLAYER": "NONE",
@@ -88,12 +596,169 @@
       "name": "Duelo de Dragões",
       "sorting": "m",
       "color": "#7a1f1f",
-      "packs": [
-        "ameacas",
-        "itens",
-        "diarios",
-        "tabelas",
-        "macros"
+      "packs": [],
+      "folders": [
+        {
+          "name": "Ferramentas gerais",
+          "sorting": "m",
+          "color": "#6b5a2f",
+          "packs": [
+            "geral-macros"
+          ],
+          "folders": []
+        },
+        {
+          "name": "Patamar 1 · Iniciante (revistas 1 a 4)",
+          "sorting": "m",
+          "color": "#3f5f7a",
+          "packs": [],
+          "folders": [
+            {
+              "name": "Revista 02 · Uma Chama na Escarcha",
+              "sorting": "m",
+              "color": "#3f5f7a",
+              "packs": [
+                "r02-ameacas",
+                "r02-itens",
+                "r02-diarios",
+                "r02-tabelas",
+                "r02-macros"
+              ]
+            },
+            {
+              "name": "Revista 03 · Maldição Álgida",
+              "sorting": "m",
+              "color": "#3f5f7a",
+              "packs": [
+                "r03-ameacas",
+                "r03-itens",
+                "r03-diarios",
+                "r03-macros"
+              ]
+            },
+            {
+              "name": "Revista 04 · Resposta Fria",
+              "sorting": "m",
+              "color": "#3f5f7a",
+              "packs": [
+                "r04-ameacas",
+                "r04-itens",
+                "r04-diarios",
+                "r04-macros"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Patamar 2 · Veterano (revistas 5 a 10)",
+          "sorting": "m",
+          "color": "#2f6b4a",
+          "packs": [],
+          "folders": [
+            {
+              "name": "Revista 05 · Víbora Enjaulada",
+              "sorting": "m",
+              "color": "#2f6b4a",
+              "packs": [
+                "r05-ameacas",
+                "r05-itens",
+                "r05-diarios",
+                "r05-tabelas",
+                "r05-macros"
+              ]
+            },
+            {
+              "name": "Revista 06 · Promessas Sopradas na Brisa",
+              "sorting": "m",
+              "color": "#2f6b4a",
+              "packs": [
+                "r06-ameacas",
+                "r06-itens",
+                "r06-diarios",
+                "r06-tabelas",
+                "r06-macros"
+              ]
+            },
+            {
+              "name": "Revista 07 · Sombra do Deus Dragão",
+              "sorting": "m",
+              "color": "#2f6b4a",
+              "packs": [
+                "r07-ameacas",
+                "r07-itens",
+                "r07-diarios",
+                "r07-tabelas",
+                "r07-macros"
+              ]
+            },
+            {
+              "name": "Revista 08 · Águas Turvas",
+              "sorting": "m",
+              "color": "#2f6b4a",
+              "packs": [
+                "r08-ameacas",
+                "r08-itens",
+                "r08-diarios",
+                "r08-tabelas",
+                "r08-macros"
+              ]
+            },
+            {
+              "name": "Revista 09 · O Último Sorriso",
+              "sorting": "m",
+              "color": "#2f6b4a",
+              "packs": [
+                "r09-ameacas",
+                "r09-itens",
+                "r09-diarios",
+                "r09-tabelas",
+                "r09-macros"
+              ]
+            },
+            {
+              "name": "Revista 10 · Castelo Escarlate",
+              "sorting": "m",
+              "color": "#2f6b4a",
+              "packs": [
+                "r10-ameacas",
+                "r10-itens",
+                "r10-diarios",
+                "r10-macros"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Patamar 3 · Campeão (revistas 11 a 16)",
+          "sorting": "m",
+          "color": "#7a2f2f",
+          "packs": [],
+          "folders": [
+            {
+              "name": "Revista 11 · Bruma Ardente",
+              "sorting": "m",
+              "color": "#7a2f2f",
+              "packs": [
+                "r11-ameacas",
+                "r11-itens",
+                "r11-diarios",
+                "r11-macros"
+              ]
+            },
+            {
+              "name": "Revista 12 · A Casa Oculta",
+              "sorting": "m",
+              "color": "#7a2f2f",
+              "packs": [
+                "r12-ameacas",
+                "r12-itens",
+                "r12-diarios",
+                "r12-tabelas",
+                "r12-macros"
+              ]
+            }
+          ]
+        }
       ]
     }
   ]

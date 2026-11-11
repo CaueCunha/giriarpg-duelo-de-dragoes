@@ -30,7 +30,7 @@ Ao abrir o mundo, o mestre ativo cria as revistas novas e reimporta as que mudar
 
 ## Compêndios (desde 0.5.0)
 
-Com o módulo ativo, a aba Compêndios mostra a pasta **Duelo de Dragões** com cinco compêndios, um por tipo (o mesmo padrão de Fim dos Tempos e Giria T20): **Ameaças e NPCs**, **Itens e parceiros**, **Diários**, **Tabelas** e **Macros**. Dentro de cada um:
+Com o módulo ativo, a aba Compêndios mostra a pasta **Duelo de Dragões**, organizada **por revista** (desde 0.19.0): cada revista tem a sua pasta, e dentro dela ficam os compêndios só com o que é daquela revista: **Ameaças e NPCs**, **Itens e parceiros**, **Diários**, **Tabelas** e **Macros** (só os tipos que a revista tem). As revistas ficam dentro do patamar:
 
 | Pasta | Revistas | Cor |
 |---|---|---|
@@ -40,7 +40,7 @@ Com o módulo ativo, a aba Compêndios mostra a pasta **Duelo de Dragões** com 
 | Patamar 3 · Campeão | 11 a 16 (Sckharshantallas) | vermelho |
 | Patamar 4 · Lenda | 17 a 20 (os sopros dos Dragões-Reais) | roxo |
 
-Cada patamar tem uma pasta por revista (Revista 02, 03... com zero à esquerda), em ordem numérica e com a cor do patamar. A pasta de um patamar só aparece quando ele tem alguma revista pronta. Os nomes internos dos compêndios e os ids não mudaram (desde 0.18.0), então links e UUIDs antigos continuam valendo. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
+Exemplo: **Duelo de Dragões › Patamar 1 · Iniciante › Revista 02 · Uma Chama na Escarcha › R02 · Ameaças e NPCs**. As revistas têm zero à esquerda (Revista 02, 03...) e ficam em ordem numérica. A pasta de um patamar só aparece quando ele tem alguma revista pronta. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
 
 ## Reimportar e remover
 
