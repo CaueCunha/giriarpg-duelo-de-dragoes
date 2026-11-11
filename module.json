@@ -2,7 +2,7 @@
   "id": "duelo-de-dragoes",
   "title": "Giriarpg - Duelo de Dragões",
   "description": "Importa cada revista de Duelo de Dragões (Revista Tormenta20 #1–20) para o mundo: ameaças, parceiros, tabelas, macros, diários e handouts, com as automações da campanha.",
-  "version": "0.17.4",
+  "version": "0.18.0",
   "authors": [
     {
       "name": "Cauê"
@@ -32,7 +32,7 @@
   "packs": [
     {
       "name": "ameacas",
-      "label": "DdD · Ameaças e aliados",
+      "label": "Ameaças e NPCs",
       "path": "packs/ameacas",
       "type": "Actor",
       "system": "tormenta20",
@@ -43,7 +43,7 @@
     },
     {
       "name": "itens",
-      "label": "DdD · Itens e parceiros",
+      "label": "Itens e parceiros",
       "path": "packs/itens",
       "type": "Item",
       "system": "tormenta20",
@@ -53,10 +53,10 @@
       }
     },
     {
-      "name": "macros",
-      "label": "DdD · Macros",
-      "path": "packs/macros",
-      "type": "Macro",
+      "name": "diarios",
+      "label": "Diários",
+      "path": "packs/diarios",
+      "type": "JournalEntry",
       "ownership": {
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
@@ -64,7 +64,7 @@
     },
     {
       "name": "tabelas",
-      "label": "DdD · Tabelas",
+      "label": "Tabelas",
       "path": "packs/tabelas",
       "type": "RollTable",
       "ownership": {
@@ -73,10 +73,10 @@
       }
     },
     {
-      "name": "diarios",
-      "label": "DdD · Diários do mestre",
-      "path": "packs/diarios",
-      "type": "JournalEntry",
+      "name": "macros",
+      "label": "Macros",
+      "path": "packs/macros",
+      "type": "Macro",
       "ownership": {
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
@@ -85,15 +85,15 @@
   ],
   "packFolders": [
     {
-      "name": "Giriarpg - Duelo de Dragões",
+      "name": "Duelo de Dragões",
       "sorting": "m",
       "color": "#7a1f1f",
       "packs": [
         "ameacas",
         "itens",
-        "macros",
+        "diarios",
         "tabelas",
-        "diarios"
+        "macros"
       ]
     }
   ]
