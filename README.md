@@ -1,4 +1,6 @@
-# Módulo Foundry "Duelo de Dragões"
+# Giria T20 - Duelo de Dragões (Campanha)
+
+Módulo de Foundry VTT para a campanha Duelo de Dragões (Tormenta20).
 
 Leva cada revista da campanha para o Foundry com um clique: fichas com tokens, parceiros, tabelas, macros, diários (plano do mestre, cartas e handouts). **Cenas e mapas não vêm no módulo**: você sobe cada mapa à mão para preparar a cena do seu jeito. As automações da campanha ficam ligadas enquanto o módulo estiver ativo.
 
@@ -16,9 +18,9 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 
 1. Descompacte `duelo-de-dragoes.zip` dentro de `Data/modules/` do Foundry (fica `Data/modules/duelo-de-dragoes/module.json`). No Windows o padrão é `%localappdata%\FoundryVTT\Data\modules`.
 2. Reinicie o Foundry, abra o mundo e ative o módulo em **Gerenciar Módulos**.
-3. Abra **Configurações > Configurar Opções > Duelo de Dragões > Importar revistas** (ou rode `ddd.abrir()` no console) e clique em **Importar** em **Ferramentas gerais** (uma vez por mundo) e depois na revista.
+3. Abra **Configurações > Configurar Opções > Giria T20 - Duelo de Dragões (Campanha) > Importar revistas** (ou rode `ddd.abrir()` no console) e clique em **Importar** em **Ferramentas gerais** (uma vez por mundo) e depois na revista.
 
-Tudo vai para as mesmas pastas dos compêndios, em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista NN" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 02 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
+Tudo vai para pastas iguais às dos compêndios (só a pasta raiz no mundo continua com o nome curto "Duelo de Dragões", para não bagunçar mundos já importados), em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista NN" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 02 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
 
 ## Substituição pela versão corrigida (0.19.1)
 
@@ -34,7 +36,7 @@ Ao abrir o mundo, o mestre ativo cria as revistas novas e reimporta as que mudar
 
 ## Compêndios (desde 0.5.0)
 
-Com o módulo ativo, a aba Compêndios mostra a pasta **Duelo de Dragões**, organizada **por revista** (desde 0.19.0): cada revista tem a sua pasta, e dentro dela ficam os compêndios só com o que é daquela revista: **Ameaças e NPCs**, **Itens e parceiros**, **Diários**, **Tabelas** e **Macros** (só os tipos que a revista tem). As revistas ficam dentro do patamar:
+Com o módulo ativo, a aba Compêndios mostra a pasta **Giria T20 - Duelo de Dragões (Campanha)**, organizada **por revista** (desde 0.19.0): cada revista tem a sua pasta, e dentro dela ficam os compêndios só com o que é daquela revista: **Ameaças e NPCs**, **Itens e parceiros**, **Diários**, **Tabelas** e **Macros** (só os tipos que a revista tem). As revistas ficam dentro do patamar:
 
 | Pasta | Revistas | Cor |
 |---|---|---|
@@ -44,7 +46,7 @@ Com o módulo ativo, a aba Compêndios mostra a pasta **Duelo de Dragões**, org
 | Patamar 3 · Campeão | 11 a 16 (Sckharshantallas) | vermelho |
 | Patamar 4 · Lenda | 17 a 20 (os sopros dos Dragões-Reais) | roxo |
 
-Exemplo: **Duelo de Dragões › Patamar 1 · Iniciante › Revista 02 · Uma Chama na Escarcha › R02 · Ameaças e NPCs**. As revistas têm zero à esquerda (Revista 02, 03...) e ficam em ordem numérica. A pasta de um patamar só aparece quando ele tem alguma revista pronta. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
+Exemplo: **Giria T20 - Duelo de Dragões (Campanha) › Patamar 1 · Iniciante › Revista 02 · Uma Chama na Escarcha › R02 · Ameaças e NPCs**. As revistas têm zero à esquerda (Revista 02, 03...) e ficam em ordem numérica. A pasta de um patamar só aparece quando ele tem alguma revista pronta. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
 
 ## Reimportar e remover
 
