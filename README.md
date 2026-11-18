@@ -22,6 +22,15 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 
 Tudo vai para pastas iguais às dos compêndios (só a pasta raiz no mundo continua com o nome curto "Duelo de Dragões", para não bagunçar mundos já importados), em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista NN" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 02 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
 
+## Testes no chat: o jogador rola (desde 0.21.0)
+
+As macros e automações da campanha não rolam mais os testes dos heróis. Como num poder, elas mandam ao chat um cartão com a rolagem de dano que está em jogo e um botão por herói ("Fortitude CD 15"). Cada jogador clica no botão do seu herói e rola pela ficha, com os bônus e efeitos de uso dele (Shift abre a janela de opções, como em qualquer teste). O resultado aparece no cartão (passou ou falhou, e quanto de dano sofre) e o mestre aplica o que acontece com um clique: dano inteiro, metade, condição ou efeito. Nada é aplicado sozinho; só o placar dos perigos (sucessos, falhas, contadores) a macro anota quando todos rolam.
+
+- O dano também aparece como rolagem de dano do sistema, com os botões dele (selecionar tokens e aplicar).
+- O mestre pode clicar no botão de um herói para rolar por ele (jogador ausente) e usar ↻ para deixar alguém rolar de novo.
+- Se o mestre recarregar a página com um cartão aberto, o cartão continua valendo, mas a continuação da macro (o placar) não roda: rode a macro de novo ou anote à mão.
+- Na primeira vez que o mundo abre com a 0.21.0, o mestre ativo troca o código de todas as macros do módulo que já estão no mundo, inclusive as editadas e as que foram puxadas dos compêndios (barra de atalhos). As editadas ganham antes uma cópia "(sua edição)" em **Duelo de Dragões / Cópias das suas edições (0.21.0)**.
+
 ## Substituição pela versão corrigida (0.19.1)
 
 Na primeira vez que o mundo abre com a 0.19.1, o mestre ativo troca **tudo** o que veio das revistas pela versão atual do módulo, inclusive o que você tinha editado, para todas as correções valerem de uma vez. Antes, cada documento editado ganha uma cópia em **Duelo de Dragões / Cópias das suas edições (0.19.1)**, com "(sua edição)" no nome. As cópias não têm a marca da revista, então nenhuma importação mexe nelas, e você pode apagá-las quando quiser. Revistas removidas não voltam, os ids são os mesmos (tokens continuam ligados) e um sussurro no chat resume o que foi trocado. Isso acontece uma vez só por mundo; depois, as próximas versões voltam a manter suas edições.
