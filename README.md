@@ -22,6 +22,10 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 
 Tudo vai para pastas iguais às dos compêndios (só a pasta raiz no mundo continua com o nome curto "Duelo de Dragões", para não bagunçar mundos já importados), em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista NN" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 02 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
 
+## Armadilhas nas regiões do mapa (desde 0.21.3)
+
+Com o módulo **Giria T20 - Armadilhas** também ativo (manifesto `https://raw.githubusercontent.com/CaueCunha/giria-t20-armadilhas/main/module.json`), as armadilhas da campanha aparecem como modelos no comportamento de região **Armadilha (Tormenta20)**, ao lado das do Livro Básico: Fosso nas Uivantes (#2), Bugulentos! (#3, com o dano contínuo), Fogo-fátuo (#12), Sussurro de Sszzaas (#13) e Maldição do Dragão-Rei (#19). O Símbolo da Morte (#9 e #13) é o do Livro Básico. Quando um token entra na região, só o mestre recebe o aviso com o botão Disparar; o disparo manda o cartão de teste no chat, como as macros.
+
 ## Testes no chat: o jogador rola (desde 0.21.0)
 
 As macros e automações da campanha não rolam mais os testes dos heróis. Como num poder, elas mandam ao chat um cartão com a rolagem de dano que está em jogo e um botão por herói ("Fortitude CD 15"). Cada jogador clica no botão do seu herói e rola pela ficha, com os bônus e efeitos de uso dele (Shift abre a janela de opções, como em qualquer teste). O resultado aparece no cartão (passou ou falhou, e quanto de dano sofre) e o mestre aplica o que acontece com um clique: dano inteiro, metade, condição ou efeito. Nada é aplicado sozinho; só o placar dos perigos (sucessos, falhas, contadores) a macro anota quando todos rolam.
