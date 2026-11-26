@@ -22,6 +22,10 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 
 Tudo vai para pastas iguais às dos compêndios (só a pasta raiz no mundo continua com o nome curto "Duelo de Dragões", para não bagunçar mundos já importados), em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista NN" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 02 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
 
+## Compêndios numa pasta só (desde 0.21.4)
+
+Na aba **Compendiums**, todos os compêndios do módulo ficam dentro da pasta **Giria T20 - Duelo de Dragões (Campanha)**, separados por patamar e revista. Ao abrir o mundo, o mestre põe ali qualquer compêndio do módulo que esteja solto (mundo novo, ou revista nova chegando numa atualização), criando as pastas que faltam. Cada compêndio é arrumado uma vez só: se você tirar um compêndio da pasta ou apagar a pasta, o módulo não mexe de novo.
+
 ## Armadilhas nas regiões do mapa (desde 0.21.3)
 
 Com o módulo **Giria T20 - Armadilhas** também ativo (manifesto `https://raw.githubusercontent.com/CaueCunha/giria-t20-armadilhas/main/module.json`), as armadilhas da campanha aparecem como modelos no comportamento de região **Armadilha (Tormenta20)**, ao lado das do Livro Básico: Fosso nas Uivantes (#2), Bugulentos! (#3, com o dano contínuo), Fogo-fátuo (#12), Sussurro de Sszzaas (#13) e Maldição do Dragão-Rei (#19). O Símbolo da Morte (#9 e #13) é o do Livro Básico. Quando um token entra na região, só o mestre recebe o aviso com o botão Disparar; o disparo manda o cartão de teste no chat, como as macros.
