@@ -1,4 +1,4 @@
-# Giria T20 - Duelo de Dragões (Campanha)
+# T20 Giria - Duelo de Dragões (Campanha)
 
 Módulo de Foundry VTT para a campanha Duelo de Dragões (Tormenta20).
 
@@ -18,13 +18,15 @@ Cada melhoria publicada sobe a versão; na lista de módulos aparece **Atualizar
 
 1. Descompacte `duelo-de-dragoes.zip` dentro de `Data/modules/` do Foundry (fica `Data/modules/duelo-de-dragoes/module.json`). No Windows o padrão é `%localappdata%\FoundryVTT\Data\modules`.
 2. Reinicie o Foundry, abra o mundo e ative o módulo em **Gerenciar Módulos**.
-3. Abra **Configurações > Configurar Opções > Giria T20 - Duelo de Dragões (Campanha) > Importar revistas** (ou rode `ddd.abrir()` no console) e clique em **Importar** em **Ferramentas gerais** (uma vez por mundo) e depois na revista.
+3. Abra **Configurações > Configurar Opções > T20 Giria - Duelo de Dragões (Campanha) > Importar revistas** (ou rode `ddd.abrir()` no console) e clique em **Importar** em **Ferramentas gerais** (uma vez por mundo) e depois na revista.
 
 Tudo vai para pastas iguais às dos compêndios (só a pasta raiz no mundo continua com o nome curto "Duelo de Dragões", para não bagunçar mundos já importados), em Atores, Itens, Tabelas, Macros e Diários: "Duelo de Dragões / Patamar N / Revista NN" (ex.: "Duelo de Dragões / Patamar 1 · Iniciante (revistas 1 a 4) / Revista 02 · Uma Chama na Escarcha"). As macros que servem para a campanha toda (DdD · Teste estendido, DdD · Frio e o atalho do importador) ficam em "Duelo de Dragões / Ferramentas gerais".
 
 ## Compêndios numa pasta só (desde 0.21.4)
 
-Na aba **Compendiums**, todos os compêndios do módulo ficam dentro da pasta **Giria T20 - Duelo de Dragões (Campanha)**, separados por patamar e revista. Ao abrir o mundo, o mestre põe ali qualquer compêndio do módulo que esteja solto (mundo novo, ou revista nova chegando numa atualização), criando as pastas que faltam. Cada compêndio é arrumado uma vez só: se você tirar um compêndio da pasta ou apagar a pasta, o módulo não mexe de novo.
+Desde a 0.21.5 o módulo se chama **T20 Giria - Duelo de Dragões (Campanha)** na lista de módulos, e a pasta dos compêndios também. Em mundos que já tinham a pasta com o nome antigo ("Giria T20 - …"), ela é renomeada ao abrir o mundo, com tudo o que estava dentro.
+
+Na aba **Compendiums**, todos os compêndios do módulo ficam dentro da pasta **T20 Giria - Duelo de Dragões (Campanha)**, separados por patamar e revista. Ao abrir o mundo, o mestre põe ali qualquer compêndio do módulo que esteja solto (mundo novo, ou revista nova chegando numa atualização), criando as pastas que faltam. Cada compêndio é arrumado uma vez só: se você tirar um compêndio da pasta ou apagar a pasta, o módulo não mexe de novo.
 
 ## Armadilhas nas regiões do mapa (desde 0.21.3)
 
@@ -53,7 +55,7 @@ Ao abrir o mundo, o mestre ativo cria as revistas novas e reimporta as que mudar
 
 ## Compêndios (desde 0.5.0)
 
-Com o módulo ativo, a aba Compêndios mostra a pasta **Giria T20 - Duelo de Dragões (Campanha)**, organizada **por revista** (desde 0.19.0): cada revista tem a sua pasta, e dentro dela ficam os compêndios só com o que é daquela revista: **Ameaças e NPCs**, **Itens e parceiros**, **Diários**, **Tabelas** e **Macros** (só os tipos que a revista tem). As revistas ficam dentro do patamar:
+Com o módulo ativo, a aba Compêndios mostra a pasta **T20 Giria - Duelo de Dragões (Campanha)**, organizada **por revista** (desde 0.19.0): cada revista tem a sua pasta, e dentro dela ficam os compêndios só com o que é daquela revista: **Ameaças e NPCs**, **Itens e parceiros**, **Diários**, **Tabelas** e **Macros** (só os tipos que a revista tem). As revistas ficam dentro do patamar:
 
 | Pasta | Revistas | Cor |
 |---|---|---|
@@ -63,7 +65,7 @@ Com o módulo ativo, a aba Compêndios mostra a pasta **Giria T20 - Duelo de Dra
 | Patamar 3 · Campeão | 11 a 16 (Sckharshantallas) | vermelho |
 | Patamar 4 · Lenda | 17 a 20 (os sopros dos Dragões-Reais) | roxo |
 
-Exemplo: **Giria T20 - Duelo de Dragões (Campanha) › Patamar 1 · Iniciante › Revista 02 · Uma Chama na Escarcha › R02 · Ameaças e NPCs**. As revistas têm zero à esquerda (Revista 02, 03...) e ficam em ordem numérica. A pasta de um patamar só aparece quando ele tem alguma revista pronta. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
+Exemplo: **T20 Giria - Duelo de Dragões (Campanha) › Patamar 1 · Iniciante › Revista 02 · Uma Chama na Escarcha › R02 · Ameaças e NPCs**. As revistas têm zero à esquerda (Revista 02, 03...) e ficam em ordem numérica. A pasta de um patamar só aparece quando ele tem alguma revista pronta. Basta arrastar o que precisar para o mundo ou para a cena. Os compêndios são só do mestre (jogadores não veem). As automações vão junto, porque ficam nas flags dos atores e itens. Os compêndios são gerados em `construir.py` (`construir_compendios`) com a ferramenta oficial `@foundryvtt/foundryvtt-cli`, instalada em `~/.cache/ddd-ferramentas`.
 
 ## Reimportar e remover
 
